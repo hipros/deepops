@@ -91,9 +91,10 @@ nfs_mounts:
 
 # Flags for enable/disable of NFS deployment
 #  - Set up an NFS server on nfs-server?
-slurm_enable_nfs_server: true
+slurm_enable_nfs_server: false
 #  - Mount NFS filesystems on nfs-clients?
-slurm_enable_nfs_client_nodes: true
+slurm_enable_nfs_client_nodes: false
+# 일단 false로 수정해놓았습니다!
 
 # Inventory host groups to use for NFS server or clients
 nfs_server_group: "slurm-master[0]"
